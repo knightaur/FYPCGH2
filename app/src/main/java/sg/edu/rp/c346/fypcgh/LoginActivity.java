@@ -61,7 +61,7 @@ public class LoginActivity extends AppCompatActivity {
                 params.add("staffID", username);
                 params.add("password", password);
 
-                client.post("http://10.0.2.2/FYPCGH/doLogin.php", params, new JsonHttpResponseHandler() {
+                client.post("http://10.0.2.2/FYPCGH/doLogin2.php", params, new JsonHttpResponseHandler() {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                         try {
